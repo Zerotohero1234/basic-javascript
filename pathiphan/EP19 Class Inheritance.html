@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+       // Es6 inheritance
+    class school {
+        constructor(name) {
+            this.name = name;
+        }
+        place() {
+            return `This ${this.name} is University of England`;
+        }
+    }
+
+    class modal extends school {
+        constructor(name,student) {
+            super(name);
+            this.student = student;
+        }
+        notice(){
+            return this.place() + ` it's where For ${this.student}`;
+        }
+    }
+
+    var test = new modal("Oxford","Study");
+    console.log(test.notice())
+
+    </script>
+</body>
+</html>

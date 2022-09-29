@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var myCar = { // this is obj
+            brand: "Ford",  // brad is property and 'ford' is value
+            model: "1",
+            color: "black",
+            Car: function() {
+                return 'Brad: ' + this.brand + '\ncolor: ' + this.color
+            }
+        };
+
+        console.log(myCar.Car());
+        console.log(myCar['color'],' ',myCar['brand']);
+
+        var person = {  
+            firstname: 'anouwath',
+            lastname: 'THAMMAVONG',
+            eyecolor: 'black',
+            fullname: function() {  // method
+                return this.firstname + ' ' + this.lastname;
+            }
+        }
+
+        console.log(person.fullname());
+    </script>
+
+</body>
+</html>

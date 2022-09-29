@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="red" onclick="changeBgred()">Red</button>
+    <button id="black" onclick="changeBgblack()">Black</button>
+    <button id="yellow" onclick="changeBg()">yellow</button>
+
+    <script>
+        function myfunction(value1, value2) { // value1 and value2 are parameter
+            console.log(value1 * value2);
+            return value1 * value2;
+        }
+        x = myfunction(2,5)
+        console.log(x)
+
+        let red = document.getElementById('red');
+        let black = document.querySelector('#black');
+
+
+        function changeBgred(red) {
+            document.body.style.background = 'red';
+        }
+
+        function changeBgblack(black) {
+            document.body.style.background = '#000';
+        }
+
+
+
+    </script>
+</body>
+</html>

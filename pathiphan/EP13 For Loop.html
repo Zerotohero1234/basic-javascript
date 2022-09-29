@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // 1. this below is for loop
+    var car = ['BMW','Ford','Honda','Audi'];
+    for (var i = 0;i<car.length;i++) {
+        console.log(car[i])
+    }
+
+    // 2. this below is for in loop
+    var person = {
+        'name':'Anouwath',
+        'lnam':'THAMMAVONG',
+        'age':21
+    };
+    console.log('\n')
+    for (var x in person) {
+        console.log(person[x]);
+    }
+
+    // 3. this below is for of loop
+    var cars = ['BMW','Ford','Honda','Audi','Bugatti'];
+    console.log('\n');
+
+    for(var y of cars){
+        console.log(y)
+    }
+
+    var language = 'JavaScript';
+    console.log('\n');
+
+    for (var a of language){
+        console.log(a)
+    }
+
+</script>
+
+</body>
+</html>

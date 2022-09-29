@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Es6 Arrow Function
+
+        // this function below this we called Function Expression
+        var hello = function() {
+            return "Hello World"
+        }
+
+        // this function below this we called Function Declaration
+        function hello1() {
+            return "Hello world"
+        }
+
+        // this below is Crating Arrow Function
+        var hello2 = () => {
+            console.log("Anouwath");
+        }
+
+        hello2();
+
+        // this below is short hand of Arrow function
+        var hi = () => "Hi this's short hand of arrow function"
+        console.log(hi())
+
+        var ford = value => "Hi" + value;
+        console.log(ford('AAA'))
+    </script>
+
+</body>
+</html>
